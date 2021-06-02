@@ -4,7 +4,7 @@ color1mono = "#575ADB"
 color1mono_dark = "#272AB6"
 color1_ = "#D2CE2D"
 color1_mono = "#DBD857"
-color1_mono2 = "#F4F3CD"
+color1_mono2 = "#000000"
 main_style_sheet = f"""
     QMainWindow {{
         background-color:{color1_mono2};
