@@ -45,7 +45,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def add_stuff(self):
         dlg = Dialog()
         dlg.ui.buttonBox.accepted.connect(
-            lambda: self.add_task(dlg.ui.new_task_input.text())
+            //lambda: self.add_task(dlg.ui.new_task_input.text())
+              lambda: self.add_task(dlg.ui.new_task_input.text().strip())
         )
         dlg.exec()
 
@@ -55,3 +56,4 @@ window = MainWindow()
 window.show()
 
 app.exec()
+
