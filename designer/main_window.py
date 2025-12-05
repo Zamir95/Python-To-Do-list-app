@@ -112,7 +112,8 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        //MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Medical Task Tracker"))
         //self.main_label.setText(_translate("MainWindow", "To Do List"))
         self.main_label.setText(_translate("MainWindow", "Medical Task Tracker"))
         //self.new_task.setText(_translate("MainWindow", "New Task"))
@@ -127,4 +128,5 @@ class Ui_MainWindow(object):
         self.remaining_tasks.setText(_translate("MainWindow", "Pending Tasks"))
         //self.pushButton_2.setText(_translate("MainWindow", "Done"))
         self.pushButton_2.setText(_translate("MainWindow", "Mark Done"))
+
 
