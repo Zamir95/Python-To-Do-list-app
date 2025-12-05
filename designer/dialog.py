@@ -31,6 +31,7 @@ class Ui_Dialog(object):
         self.label.setObjectName("label")
         self.verticalLayout.addWidget(self.label)
         self.new_task_input = QtWidgets.QLineEdit(self.widget)
+        self.new_task_input.setPlaceholderText("e.g., Administer medication to patient #12")
         self.new_task_input.setMinimumSize(QtCore.QSize(0, 0))
         self.new_task_input.setObjectName("new_task_input")
         self.verticalLayout.addWidget(self.new_task_input)
@@ -49,4 +50,7 @@ class Ui_Dialog(object):
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
-        self.label.setText(_translate("Dialog", "Activity Name"))
+        //self.label.setText(_translate("Dialog", "Activity Name"))
+        self.label.setText(_translate("Dialog", "Enter Medical Task"))
+
+
