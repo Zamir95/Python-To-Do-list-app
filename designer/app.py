@@ -27,8 +27,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.pushButton_3.clicked.connect(self.undo_task)
         self.setStyleSheet(main_style_sheet)
     def add_task(self, task): # will not print in the terminal but on the screen
-        if bool(task) != False:
-            self.remaining_list.addItem(task) 
+        task = task.strip()
+          if task:
+              self.remaining_list.addItem(task)
+        //if bool(task) != False:
+            //self.remaining_list.addItem(task) 
 
     def do_task(self):
         task = self.remaining_list.takeItem(self.remaining_list.currentRow())#ramining list and takes item from row a returns back to task
@@ -50,4 +53,5 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 app = QApplication([])
 window = MainWindow()
 window.show()
+
 app.exec()
