@@ -49,8 +49,10 @@ class Ui_Dialog(object):
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
+        //Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
+        Dialog.setWindowTitle(_translate("Dialog", "Create Medical Task"))
         //self.label.setText(_translate("Dialog", "Activity Name"))
         self.label.setText(_translate("Dialog", "Enter Medical Task"))
+
 
 
